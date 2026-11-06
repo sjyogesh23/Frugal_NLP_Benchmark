@@ -1,0 +1,31 @@
+use_case,model_id,kind,base_model,n_train,macro_f1,accuracy,wh_per_1k,latency_ms,train_wh,eval_g_co2,energy_source,data_left_premises,trainable_params,n_test,rank_f1
+sentiment,llm-gemini-gemini-3.5-flash-lite-sentiment,llm-gemini,gemini-3.5-flash-lite,0,0.9716,0.97,10.0261,33.3,0.0,0.45121,codecarbon(client)+estimate(0.24Wh/prompt x 12),1,0,300,1
+sentiment,llm-local-Qwen2.5-0.5B-Instruct-sentiment,llm-local,Qwen/Qwen2.5-0.5B-Instruct,0,0.9033,0.9033,0.2269,8.84,0.0,0.04857,codecarbon,0,0,300,2
+sentiment,slm-sentiment-bge-base-en-v1.5-32pc-73a641,slm,BAAI/bge-base-en-v1.5,64,0.8499,0.85,0.0617,1.99,0.1088,0.0132,codecarbon,0,296450,300,3
+sentiment,slm-sentiment-bge-small-en-v1.5-64pc-cbe69d,slm,BAAI/bge-small-en-v1.5,128,0.8333,0.8333,0.0603,1.21,0.14,0.01291,codecarbon,0,148226,300,4
+sentiment,slm-sentiment-bge-small-en-v1.5-32pc-a0e6bb,slm,BAAI/bge-small-en-v1.5,64,0.8257,0.8267,0.0171,1.26,0.0711,0.00367,codecarbon,0,148226,300,5
+sentiment,slm-sentiment-bge-small-en-v1.5-32pc-1e03a9,slm,BAAI/bge-small-en-v1.5,64,0.8233,0.8233,0.0515,1.07,0.1062,0.01102,codecarbon,0,148226,300,6
+sentiment,slm-sentiment-bge-small-en-v1.5-32pc-025c43,slm,BAAI/bge-small-en-v1.5,64,0.82,0.82,0.0658,1.25,0.0771,0.01408,codecarbon,0,148226,300,7
+sentiment,slm-sentiment-bge-small-en-v1.5-16pc-f7402f,slm,BAAI/bge-small-en-v1.5,32,0.8097,0.81,0.0231,1.1,0.0447,0.00494,codecarbon,0,148226,300,8
+sentiment,slm-sentiment-bge-small-en-v1.5-8pc-9ed6fd,slm,BAAI/bge-small-en-v1.5,16,0.8071,0.81,0.0437,1.03,0.0308,0.00935,codecarbon,0,148226,300,9
+sentiment,slm-sentiment-distilroberta-base-32pc-bf35fb,slm,distilroberta-base,64,0.7732,0.7733,0.0456,1.31,0.0664,0.00976,codecarbon,0,739586,300,10
+sentiment,slm-sentiment-distilbert-base-uncased-32pc-3862d2,slm,distilbert-base-uncased,64,0.7533,0.7533,0.0477,1.28,0.066,0.01022,codecarbon,0,739586,300,11
+spam,llm-gemini-gemini-3.5-flash-lite-spam,llm-gemini,gemini-3.5-flash-lite,0,0.9729,0.9867,11.7706,162.54,0.0,0.82458,codecarbon(client)+estimate(0.24Wh/prompt x 12),1,0,300,1
+spam,slm-spam-distilbert-base-uncased-32pc-1e84cf,slm,distilbert-base-uncased,64,0.9593,0.98,0.0576,1.53,0.0754,0.01232,codecarbon,0,739586,300,2
+spam,slm-spam-bge-small-en-v1.5-16pc-8f6890,slm,BAAI/bge-small-en-v1.5,32,0.9529,0.9767,0.0298,1.35,0.0455,0.00638,codecarbon,0,148226,300,3
+spam,slm-spam-bge-small-en-v1.5-32pc-c889e8,slm,BAAI/bge-small-en-v1.5,64,0.9406,0.97,0.0326,1.02,0.1157,0.00697,codecarbon,0,148226,300,4
+spam,slm-spam-bge-small-en-v1.5-32pc-866302,slm,BAAI/bge-small-en-v1.5,64,0.9346,0.9667,0.0529,1.39,0.0795,0.01133,codecarbon,0,148226,300,5
+spam,slm-spam-bge-small-en-v1.5-64pc-434fb7,slm,BAAI/bge-small-en-v1.5,128,0.9243,0.96,0.0333,1.02,0.1825,0.00714,codecarbon,0,148226,300,6
+spam,slm-spam-bge-small-en-v1.5-16pc-565dec,slm,BAAI/bge-small-en-v1.5,32,0.9193,0.96,0.0948,1.4,0.0285,0.01353,codecarbon,0,148226,200,7
+spam,slm-spam-bge-small-en-v1.5-32pc-a8639c,slm,BAAI/bge-small-en-v1.5,64,0.9173,0.9567,0.0491,1.38,0.0776,0.01052,codecarbon,0,148226,300,8
+spam,slm-spam-bge-small-en-v1.5-8pc-aeb170,slm,BAAI/bge-small-en-v1.5,16,0.7502,0.8267,0.0236,1.04,0.0276,0.00506,codecarbon,0,148226,300,9
+spam,llm-local-Qwen2.5-0.5B-Instruct-spam,llm-local,Qwen/Qwen2.5-0.5B-Instruct,0,0.488,0.8667,0.2195,10.36,0.0,0.04698,codecarbon,0,0,300,10
+topic,llm-gemini-gemini-3.5-flash-lite-topic,llm-gemini,gemini-3.5-flash-lite,0,0.894,0.8867,11.5244,152.52,0.0,0.77188,codecarbon(client)+estimate(0.24Wh/prompt x 12),1,0,300,1
+topic,slm-topic-bge-base-en-v1.5-32pc-6aae4c,slm,BAAI/bge-base-en-v1.5,128,0.8828,0.8767,0.1073,3.05,0.3467,0.02296,codecarbon,0,297988,300,2
+topic,slm-topic-bge-small-en-v1.5-64pc-1ebe2b,slm,BAAI/bge-small-en-v1.5,256,0.8728,0.8633,0.0302,1.72,0.3425,0.00647,codecarbon,0,148996,300,3
+topic,slm-topic-distilroberta-base-32pc-19f2ee,slm,distilroberta-base,128,0.8601,0.8533,0.0319,1.86,0.1705,0.00683,codecarbon,0,741124,300,4
+topic,slm-topic-bge-small-en-v1.5-16pc-e04599,slm,BAAI/bge-small-en-v1.5,64,0.8581,0.85,0.0733,1.49,0.0837,0.01568,codecarbon,0,148996,300,5
+topic,slm-topic-bge-small-en-v1.5-32pc-92e54d,slm,BAAI/bge-small-en-v1.5,128,0.8572,0.8467,0.0642,1.59,0.1658,0.01374,codecarbon,0,148996,300,6
+topic,slm-topic-distilbert-base-uncased-32pc-978952,slm,distilbert-base-uncased,128,0.8547,0.8467,0.0534,2.27,0.1691,0.01143,codecarbon,0,741124,300,7
+topic,slm-topic-bge-small-en-v1.5-8pc-3b0aa0,slm,BAAI/bge-small-en-v1.5,32,0.78,0.7733,0.0314,1.7,0.0389,0.00672,codecarbon,0,148996,300,8
+topic,llm-local-Qwen2.5-0.5B-Instruct-topic,llm-local,Qwen/Qwen2.5-0.5B-Instruct,0,0.4284,0.5033,0.3736,14.42,0.0,0.07996,codecarbon,0,0,300,9

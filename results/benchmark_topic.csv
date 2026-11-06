@@ -1,0 +1,10 @@
+use_case,model_id,kind,base_model,n_train,macro_f1,accuracy,wh_per_1k,latency_ms,train_wh,eval_g_co2,energy_source,data_left_premises,trainable_params,n_test,rank_f1
+topic,llm-gemini-gemini-3.5-flash-lite-topic,llm-gemini,gemini-3.5-flash-lite,0,0.894,0.8867,11.5244,152.52,0.0,0.77188,codecarbon(client)+estimate(0.24Wh/prompt x 12),1,0,300,1
+topic,slm-topic-bge-base-en-v1.5-32pc-6aae4c,slm,BAAI/bge-base-en-v1.5,128,0.8828,0.8767,0.1073,3.05,0.3467,0.02296,codecarbon,0,297988,300,2
+topic,slm-topic-bge-small-en-v1.5-64pc-1ebe2b,slm,BAAI/bge-small-en-v1.5,256,0.8728,0.8633,0.0302,1.72,0.3425,0.00647,codecarbon,0,148996,300,3
+topic,slm-topic-distilroberta-base-32pc-19f2ee,slm,distilroberta-base,128,0.8601,0.8533,0.0319,1.86,0.1705,0.00683,codecarbon,0,741124,300,4
+topic,slm-topic-bge-small-en-v1.5-16pc-e04599,slm,BAAI/bge-small-en-v1.5,64,0.8581,0.85,0.0733,1.49,0.0837,0.01568,codecarbon,0,148996,300,5
+topic,slm-topic-bge-small-en-v1.5-32pc-92e54d,slm,BAAI/bge-small-en-v1.5,128,0.8572,0.8467,0.0642,1.59,0.1658,0.01374,codecarbon,0,148996,300,6
+topic,slm-topic-distilbert-base-uncased-32pc-978952,slm,distilbert-base-uncased,128,0.8547,0.8467,0.0534,2.27,0.1691,0.01143,codecarbon,0,741124,300,7
+topic,slm-topic-bge-small-en-v1.5-8pc-3b0aa0,slm,BAAI/bge-small-en-v1.5,32,0.78,0.7733,0.0314,1.7,0.0389,0.00672,codecarbon,0,148996,300,8
+topic,llm-local-Qwen2.5-0.5B-Instruct-topic,llm-local,Qwen/Qwen2.5-0.5B-Instruct,0,0.4284,0.5033,0.3736,14.42,0.0,0.07996,codecarbon,0,0,300,9

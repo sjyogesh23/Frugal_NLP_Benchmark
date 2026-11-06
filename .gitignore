@@ -1,0 +1,10 @@
+.venv/
+.env
+__pycache__/
+models/
+data/
+registry.db
+*.enc
+.ipynb_checkpoints/
+emissions.csv
+.codecarbon.config

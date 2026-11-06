@@ -1,0 +1,11 @@
+use_case,model_id,kind,base_model,n_train,macro_f1,accuracy,wh_per_1k,latency_ms,train_wh,eval_g_co2,energy_source,data_left_premises,trainable_params,n_test,rank_f1
+spam,llm-gemini-gemini-3.5-flash-lite-spam,llm-gemini,gemini-3.5-flash-lite,0,0.9729,0.9867,11.7706,162.54,0.0,0.82458,codecarbon(client)+estimate(0.24Wh/prompt x 12),1,0,300,1
+spam,slm-spam-distilbert-base-uncased-32pc-1e84cf,slm,distilbert-base-uncased,64,0.9593,0.98,0.0576,1.53,0.0754,0.01232,codecarbon,0,739586,300,2
+spam,slm-spam-bge-small-en-v1.5-16pc-8f6890,slm,BAAI/bge-small-en-v1.5,32,0.9529,0.9767,0.0298,1.35,0.0455,0.00638,codecarbon,0,148226,300,3
+spam,slm-spam-bge-small-en-v1.5-32pc-c889e8,slm,BAAI/bge-small-en-v1.5,64,0.9406,0.97,0.0326,1.02,0.1157,0.00697,codecarbon,0,148226,300,4
+spam,slm-spam-bge-small-en-v1.5-32pc-866302,slm,BAAI/bge-small-en-v1.5,64,0.9346,0.9667,0.0529,1.39,0.0795,0.01133,codecarbon,0,148226,300,5
+spam,slm-spam-bge-small-en-v1.5-64pc-434fb7,slm,BAAI/bge-small-en-v1.5,128,0.9243,0.96,0.0333,1.02,0.1825,0.00714,codecarbon,0,148226,300,6
+spam,slm-spam-bge-small-en-v1.5-16pc-565dec,slm,BAAI/bge-small-en-v1.5,32,0.9193,0.96,0.0948,1.4,0.0285,0.01353,codecarbon,0,148226,200,7
+spam,slm-spam-bge-small-en-v1.5-32pc-a8639c,slm,BAAI/bge-small-en-v1.5,64,0.9173,0.9567,0.0491,1.38,0.0776,0.01052,codecarbon,0,148226,300,8
+spam,slm-spam-bge-small-en-v1.5-8pc-aeb170,slm,BAAI/bge-small-en-v1.5,16,0.7502,0.8267,0.0236,1.04,0.0276,0.00506,codecarbon,0,148226,300,9
+spam,llm-local-Qwen2.5-0.5B-Instruct-spam,llm-local,Qwen/Qwen2.5-0.5B-Instruct,0,0.488,0.8667,0.2195,10.36,0.0,0.04698,codecarbon,0,0,300,10
